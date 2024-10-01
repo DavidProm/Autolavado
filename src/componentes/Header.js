@@ -42,7 +42,7 @@ const Header = ({ user, onLogout }) => (
           <li><Link to="/">Inicio</Link></li>
           <li><Link to="/Lavado">Lavados</Link></li>
           <li><Link to="/Galeria">Galeria</Link></li>
-          <li><Link to="/Agendamiento">Agendamiento</Link></li>
+          <li><Link to="/Agendamiento">Agendar</Link></li>
         </ul>
       </nav>
     </div>
