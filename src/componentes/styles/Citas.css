@@ -1,0 +1,108 @@
+.citas-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.citas-container h2 {
+    text-align: center;
+    color: #333;
+}
+
+.citas-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.citas-list li {
+    background-color: #ffffff;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.citas-list li:hover {
+    transform: translateY(-2px);
+}
+
+.citas-list li span {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.boton-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.confirmacion-modal {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 1000;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    max-width: 400px;
+    align-items: center;
+    justify-content: center;
+}
+
+.boton-citas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    padding: 10px;
+    margin: 10px;
+    background-color: #00b837;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.boton-citas:hover {
+    background-color: #007523;
+}
+
+.boton-modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    padding: 10px;
+    margin: 10px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.boton-modal:hover {
+    background-color: #991421;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}

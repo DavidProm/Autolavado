@@ -42,10 +42,6 @@ button {
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #F59300;
-}
-
 .toggle-link {
     display: block;
     text-align: center;

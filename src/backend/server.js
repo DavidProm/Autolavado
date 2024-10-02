@@ -99,6 +99,40 @@ app.post('/api/citas', (req, res) => {
   });
 });
 
+//Recibir las citas de la base de datos
+app.get('/api/citas', (req, res) => {
+  const sql = 'SELECT * FROM citas';
+
+  conexion.query(sql, (err, results) => {
+    if (err) {
+      console.error(err);
+      res.status(500).send('Error al obtener las citas');
+    } else {
+      res.status(200).json(results);
+    }
+  });
+});
+
+//Eliminar una cita
+app.delete('/api/citas/:id', (req, res) => {
+  const citaId = req.params.id;
+
+  const sql = "DELETE FROM citas WHERE id = ?";
+  
+  conexion.query(sql, [citaId], (err, result) => {
+      if (err) {
+          console.error(err);
+          return res.status(500).json({ message: 'Error al eliminar la cita' });
+      }
+      
+      if (result.affectedRows > 0) {
+          return res.status(200).json({ message: 'Cita eliminada correctamente' });
+      } else {
+          return res.status(404).json({ message: 'Cita no encontrada' });
+      }
+  });
+});
+
 app.listen(3001, () => {
   console.log("Servidor corriendo en http://localhost:3001");
 });

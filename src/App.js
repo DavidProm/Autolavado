@@ -5,6 +5,7 @@ import LoginForm from './componentes/LoginForm';
 import Lavado from './componentes/Lavado';
 import Galeria from './componentes/Galeria';
 import Agendamiento from './componentes/Agendamiento';
+import Citas from './componentes/Citas';
 import './styles/App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
@@ -39,6 +40,7 @@ const App = () => {
         <Route path="/Lavado" element={<Lavado user={user} onLogout={handleLogout} />} />
         <Route path="/Galeria" element={<Galeria user={user} onLogout={handleLogout} />} />
         <Route path="/Agendamiento" element={<Agendamiento user={user} onLogout={handleLogout} />} />
+        <Route path="/Citas" element={<Citas user={user} onLogout={handleLogout} />} />
       </Routes>
     </div>
   );

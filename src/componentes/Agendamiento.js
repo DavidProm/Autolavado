@@ -61,7 +61,7 @@ function Agendamiento({ user, onLogout }) {
     return (
         <>
             <Header user={user} onLogout={onLogout} />
-            <div className="container">
+            <div className="agendamiento-container">
                 <br />
                 <h2>Agendamiento de cita</h2>
                 <div className="row">
@@ -116,15 +116,16 @@ function Agendamiento({ user, onLogout }) {
                         </section>
                     </div>
                     <h2>Ubicación del Autolavado</h2>
-                    <div id="map">
-                        <br />
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d493.5425673261006!2d-73.36369031297323!3d8.268862888920937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sco!4v1715905662773!5m2!1ses-419!2sco"
-                            width="600" height="450" style={{ border: 0 }} allowFullScreen loading="lazy"
-                            referrerPolicy="no-referrer-when-downgrade"
-                        ></iframe>
-                    </div>
+
                 </div>
+            </div>
+            <div id="map">
+                <br />
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d493.5425673261006!2d-73.36369031297323!3d8.268862888920937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sco!4v1715905662773!5m2!1ses-419!2sco"
+                    width="600" height="450" style={{ border: 0 }} allowFullScreen loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                ></iframe>
             </div>
             <Footer />
             {showModal && (
