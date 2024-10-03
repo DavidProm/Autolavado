@@ -76,7 +76,7 @@
     background-color: #007523;
 }
 
-.boton-modal {
+.boton-modal2 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -90,7 +90,7 @@
     cursor: pointer;
 }
 
-.boton-modal:hover {
+.boton-modal2:hover {
     background-color: #991421;
 }
 
@@ -105,4 +105,62 @@
     justify-content: center;
     align-items: center;
     z-index: 999;
+}
+
+.modal-overlay-seguridad {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.clave-modal {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.boton-modal {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px 10px;
+}
+
+.boton-modal:hover {
+    background-color: #45a049;
+}
+
+.boton-modal-cancelar {
+    padding: 10px 20px;
+    background-color: #f44336;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.boton-modal-cancelar:hover {
+    background-color: #d32f2f;
 }
